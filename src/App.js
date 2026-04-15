@@ -14,7 +14,7 @@ function App() {
   const [taxPercent, setTaxPercent] = useState(0);
   const [discountPercent, setDiscountPercent] = useState(0);
   const [notes, setNotes] = useState('Thank you for your business! Payment within 15 days please.');
-  const [logo, setLogo] = useState(logoImage);
+  const logo = logoImage;
   const [signature, setSignature] = useState(null);
   const [bankName, setBankName] = useState('');
   const [accountTitle, setAccountTitle] = useState('');
