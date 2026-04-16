@@ -1,3 +1,4 @@
+import { Analytics } from '@vercel/analytics/react';
 import { useState, useRef, useEffect } from 'react';
 import jsPDF from 'jspdf';
 import html2canvas from 'html2canvas';
@@ -339,6 +340,7 @@ function App() {
         <button onClick={downloadPDF} className="bg-indigo-600 text-white px-6 py-3 rounded-lg font-bold hover:bg-indigo-700">{isPrinting? 'Generating...' : '📄 Download PDF'}</button>
         <button onClick={clearForm} className="bg-gray-600 text-white px-6 py-3 rounded-lg font-bold hover:bg-gray-700">🗑️ Clear Form</button>
       </div>
+      <Analytics />
     </div>
   );
 }
